@@ -1,0 +1,66 @@
+/* reset.css — минимальный baseline, mobile-first проект */
+
+/* 1. Предсказуемый box model (размер = content + padding + border) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Убираем дефолтные отступы у типичных элементов */
+/* Сброс стандартных отступов браузера */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Базовая типографика и высота страницы */
+body {
+  min-height: 100dvh; /* dvh = dynamic viewport height, лучше vh на мобилках */
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; /* опционально: тоньше текст на macOS */
+}
+
+/* 4. Медиа не ломают вёрстку */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Формы наследуют шрифт от body, а не от браузера */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 6. Заголовки переносятся аккуратнее (современное свойство) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* 7. Уважаем настройку «уменьшить движение» */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "four-card-feature-section-master",
+  "version": "1.0.0",
+  "description": "Это моё решение задания [«Four card feature section» на Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Задания Frontend Mentor помогают прокачать навыки вёрстки через реальные проекты.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sass": "^1.101.0",
+    "stylelint": "^17.13.0"
+  }
+}
