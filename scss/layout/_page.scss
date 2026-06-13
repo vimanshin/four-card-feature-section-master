@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as *;
+
+main {
+  display: block;
+  width: 100%;
+  margin-bottom: 3.75rem;
+}
+
+.attribution {
+  margin-bottom: $space-300;
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

@@ -1,0 +1,45 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.intro {
+  display: block;
+
+  margin-top: 3.5rem;
+  margin-bottom: 3.75rem;
+  text-align: center;
+
+  @include respond(tablet) {
+    margin-top: 5rem;
+    margin-bottom: 4.625rem;
+  }
+}
+
+.intro__title {
+
+  margin-bottom: $space-200;
+  color: var(--color-grey-500);
+  font-size: $font-size-title;
+  letter-spacing: $letter-spacing-title;
+
+  @include respond(tablet) {
+    font-size: 2.25rem;
+  }
+}
+
+.intro__title-light {
+  display: block;
+  font-weight: 200;
+}
+
+.intro__title-bold {
+  display: block;
+  font-weight: 600;
+}
+
+.intro__text {
+  max-width: $intro-text-max-width;
+  margin-inline: auto;
+  color: var(--color-grey-400);
+  font-size: var(--font-size-base);
+  letter-spacing: $letter-spacing-title;
+}

@@ -1,0 +1,17 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+body {
+  min-height: 100dvh;
+  padding-inline: 1.875rem; //
+  color: var(--color-grey-500);
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  font-size: var(--font-size-base);
+  line-height: $line-height-body;
+  background-color: hsl(0, 0%, 98%);
+
+  @include respond(tablet) {
+    padding-inline: 3.375rem;
+  }
+}

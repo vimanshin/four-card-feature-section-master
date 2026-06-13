@@ -17,7 +17,7 @@ export default {
     'no-descending-specificity': true,
 
     // — Синтаксис и нотация —
-    'color-function-notation': 'modern',
+    'color-function-notation': 'legacy',
     'alpha-value-notation': 'number',
     'length-zero-no-unit': true,
     'import-notation': 'url',
